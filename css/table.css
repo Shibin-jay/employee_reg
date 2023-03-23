@@ -1,0 +1,32 @@
+body {
+    background: #4BC40F;
+    background: -webkit-linear-gradient(bottom right, #4BC40F, #2388EF);
+    background: -moz-linear-gradient(bottom right, #4BC40F, #2388EF);
+    background: linear-gradient(to top left, #4BC40F, #2388EF);
+    padding: 100px;
+}
+
+table {
+    width: 60%;
+}
+
+table th,
+table td {
+    text-align: left;
+    white-space: nowrap;
+    padding: 10px 20px;
+    font-family: Arial;
+}
+table tr th:first-child,
+table td:first-child {
+    position: sticky;
+    width: 100px;
+    left: 0;
+    background: transparent;
+}
+table tr th {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background: transparent;
+}
