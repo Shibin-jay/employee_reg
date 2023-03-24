@@ -33,7 +33,7 @@ try {
     $sql = $conn->query("SELECT * FROM employeeDetails");
 
     echo "<table>";
-    echo "<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>Phone</th><th>Department</th></tr>";
+    echo "<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>Phone</th><th>Department</th><th>Action</th></tr>";
     while ($row = $sql->fetch()) {
         echo "<tr>
         <td>" . $row['fname'] . "</td>
@@ -41,7 +41,10 @@ try {
         <td>" . $row['email'] . "</td>
         <td>" . $row['phone'] . "</td>
         <td>" . $row['dept'] . "</td>
-        </tr>";
+        <td>
+        <a class='editBtn' href='edit.php?id=" . $row['id'] . "'>Edit</a>
+        <a class='deleteBtn' onclick='return confirm('are you sure?')' href ='delete.php?id=" . $row['id'] . "'>Delete</a> 
+        </td></tr>";
     }
     echo "</table>";
 

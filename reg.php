@@ -56,17 +56,7 @@ if (!isset($_SESSION['loggedIn'])) {
                 <div class="mb-3">
                   <label for="department" class="form-label">Department :</label>
                   <input type="text" class="form-control" required id="department" name="department">
-              </div>
-
-                <!-- <div class="mb-3">
-                  <label for="Password" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="Password">
-                  <p id="validateMessage" class="text-danger"></p>
                 </div>
-                <div class="mb-3">
-                    <label for="confirmPass" class="form-label">Confirm-Password</label>
-                    <input type="password" class="form-control" id="confirmPass" name="confirmPass">
-                </div> -->
                 <button type="submit" class="btn btn-primary mx-2">Submit</button>
                 <button type="reset" class="btn btn-danger mx-2">Reset</button>
                 <a class="text-white " id="viewBtn" href="table.php">View all</a>

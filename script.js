@@ -2,7 +2,7 @@ const phone = document.querySelector("#phNum");
 const numMSg =  document.querySelector("#numMsg");
 
 const emailInput = document.querySelector("#email");
-const emailValidateMsg = document.querySelector("#emailValidateMsg");
+const emailValidate = document.querySelector("#emailValidateMsg");
 
 function validateEmail() {
   const email = emailInput.value;
@@ -10,12 +10,12 @@ function validateEmail() {
   if (re.test(email)) {
     emailInput.classList.remove("is-invalid");
     emailInput.classList.add("is-valid");
-    emailValidateMsg.classList.remove('text-danger');
-    emailValidateMsg.innerHTML = "";
+    emailValidate.classList.remove('text-danger');
+    emailValidate.innerHTML = "";
     console.log("hi");
   } else {
-    emailValidateMsg.classList.add('text-danger');
-    emailValidateMsg.innerHTML = "Please enter a valid email address.";
+    emailValidate.classList.add('text-danger');
+    emailValidate.innerHTML = "Please enter a valid email address.";
   }
 }
 

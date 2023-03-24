@@ -30,3 +30,18 @@ table tr th {
     z-index: 9;
     background: transparent;
 }
+a{
+    text-decoration: none;
+}
+.deleteBtn{
+    background: rgb(236, 91, 24);
+    padding: 8px;
+    border-radius: 10px;
+    color:white;
+}
+.editBtn{
+    color:white;
+    background: #4BC40F;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
