@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * File name: delete.php
+ * PHP script for deleting employee.
+ * PHP version 8.2.3
+ *
+ * @category PHP Session
+ * @package  CodilarProjects
+ * @license  https://opensource.org/licenses/MIT MIT
+ * @link     https://www.example.com/docs/auth
+ * @author   Shibin <shibin.s@codilar.com>
+ */
+
 require_once realpath(__DIR__ . "/vendor/autoload.php");
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
@@ -25,4 +37,3 @@ try {
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
-?>
